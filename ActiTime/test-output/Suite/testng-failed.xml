@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="IETest(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://192.168.43.102:4444/wd/hub/"/>
+    <parameter name="browser" value="internet explorer"/>
+    <parameter name="appurl" value="https://online.actitime.com/zzz/user/submit_tt.do"/>
+    <classes>
+      <class name="Com_ActiTime_Tests.VerifyVersionTest">
+        <methods>
+          <include name="postcondition"/>
+          <include name="VerifyVersion"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.VerifyVersionTest -->
+      <class name="Com_ActiTime_Tests.InvalidLoginTest">
+        <methods>
+          <include name="postcondition"/>
+          <include name="InvalidLogin"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.InvalidLoginTest -->
+      <class name="Com_ActiTime_Tests.ValidLoginLogoutTest">
+        <methods>
+          <include name="ValidLoginLogout"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.ValidLoginLogoutTest -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://192.168.43.102:4444/wd/hub/"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="appurl" value="https://online.actitime.com/zzz/user/submit_tt.do"/>
+    <classes>
+      <class name="Com_ActiTime_Tests.VerifyVersionTest">
+        <methods>
+          <include name="postcondition"/>
+          <include name="VerifyVersion"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.VerifyVersionTest -->
+      <class name="Com_ActiTime_Tests.InvalidLoginTest">
+        <methods>
+          <include name="postcondition"/>
+          <include name="InvalidLogin"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.InvalidLoginTest -->
+      <class name="Com_ActiTime_Tests.ValidLoginLogoutTest">
+        <methods>
+          <include name="ValidLoginLogout"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.ValidLoginLogoutTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test thread-count="5" name="chromeTest(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://192.168.43.102:4444/wd/hub/"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="appurl" value="https://online.actitime.com/zzz/user/submit_tt.do"/>
+    <classes>
+      <class name="Com_ActiTime_Tests.VerifyVersionTest">
+        <methods>
+          <include name="postcondition"/>
+          <include name="VerifyVersion"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.VerifyVersionTest -->
+      <class name="Com_ActiTime_Tests.InvalidLoginTest">
+        <methods>
+          <include name="postcondition"/>
+          <include name="InvalidLogin"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.InvalidLoginTest -->
+      <class name="Com_ActiTime_Tests.ValidLoginLogoutTest">
+        <methods>
+          <include name="ValidLoginLogout"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Tests.ValidLoginLogoutTest -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
